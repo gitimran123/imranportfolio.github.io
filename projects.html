@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Md. Imran Hasan Murad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body {
+      background: linear-gradient(120deg, #1c1c1c, #2e3a59);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 10%;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 { font-size: 1.5rem; }
+    nav a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+    }
+    nav a:hover { color: #00bcd4; }
+    main {
+      padding: 8rem 10% 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: #222;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card h3 {
+      color: #00bcd4;
+      margin-bottom: 0.5rem;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      color: #888;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Imran.</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>University Bus Management System</h3>
+        <p>A clean and responsive prototype system built with C language.</p>
+      </div>
+      <div class="project-card">
+        <h3>Suprshop Management System</h3>
+        <p>A simple and user-friendly online supershop manager with withm strong and secure database built with HTML, CSS, Js, MySQL & PHP.</p>
+      </div>
+      <div class="project-card">
+        <h3>Green EV Charging Station</h3>
+        <p>A solar based ev charging project, where we use solar power to charge the EVs. No external electricity needed here.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Md. Imran Hasan Murad. All rights reserved.
+  </footer>
+</body>
+</html>
